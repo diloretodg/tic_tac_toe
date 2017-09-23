@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Tic Tac Toe</title>
+
+      <style >
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway|Ubuntu');
+        body {
+          width: 550px;
+          margin: auto;
+        }
+        h1 {
+          border-bottom: 1px solid black;
+          font-family: 'Raleway', sans-serif;
+        }
+        .Square {
+          height: 80px;
+          width: 80px;
+          font-size: 45pt;
+          text-align: center;
+          font-family: 'Indie Flower', cursive;
+        }
+        #message {
+          font-size: 15pt;
+          font-family: 'Indie Flower', cursive;
+        }
+        #restart {
+          text-decoration: none;
+          font-size: 15pt;
+          color: black;
+          font-family: 'Raleway', sans-serif;
+        }
+      </style>
+    </head/>
+    <body onload="startGame()">
+      <h1>Tic Tac Toe in JAVASCRIPT.</h1>
+      <div id="message">Messages HERE</div>
+      <table border="1">
+        <tr>
+          <td class="Square" id="s1" onClick="nextMove(this)"></td>
+          <td class="Square" id="s2" onClick="nextMove(this)"></td>
+          <td class="Square" id="s3" onClick="nextMove(this)"></td>
+        </tr>
+        <tr>
+          <td class="Square" id="s4" onClick="nextMove(this)"></td>
+          <td class="Square" id="s5" onClick="nextMove(this)"></td>
+          <td class="Square" id="s6" onClick="nextMove(this)"></td>
+        </tr>
+        <tr>
+          <td class="Square" id="s7" onClick="nextMove(this)"></td>
+          <td class="Square" id="s8" onClick="nextMove(this)"></td>
+          <td class="Square" id="s9" onClick="nextMove(this)"></td>
+        </tr>
+      </table>
+      <a href="javascript: startGame();" id="restart">Start Over</a>
+      <script src="main.js"></script>
+    </body>
+  <html>
